@@ -65,7 +65,7 @@ public class Worker extends Thread {
     }
 
     private String toText(byte[] ip) {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < ip.length; i++) {
             if (i > 0) {
                 result.append(".");
