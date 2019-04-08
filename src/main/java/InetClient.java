@@ -17,7 +17,8 @@ public class InetClient {
     public static void main(String[] args) {
         String serverName;
 
-        // can pass in a server name with program arguments. If none provided, the default is "localhost"
+        // can pass in a server name with program arguments in order to connect to a remote host.
+        // If none provided, will default to localhost.
         if (args.length < 1) {
             serverName = "localhost";
         } else {
